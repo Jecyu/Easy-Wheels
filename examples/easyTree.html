@@ -11,6 +11,7 @@
     />
   </head>
   <body>
+    <button id="remove">remove tree</button>
     <div id="wrapper">
       <!-- <div class="tiny-tree-wrapper">
       <ul class="tiny-tree"> 
@@ -20,14 +21,13 @@
         </li>
       </ul>
     </div> -->
-      <button id="remove">remove tree</button>
     </div>
     <!-- 导入 DevServer 输出的 JavaScript 文件，或者打包出来的文件 -->
     <script src="../easy-wheels.min.js"></script>
     <script>
       console.log("easy-wheels =>", easyWheels.EasyTree);
       const { EasyTree } = easyWheels;
-      
+
       const dataMaker = function(count, nodeKey = "id", parentKey = "pId") {
         let nodes = [],
           min = 10,
@@ -103,7 +103,6 @@
       let easyTreeHHH = new EasyTree({ baseNode: wrapper, data: treeData });
       document.querySelector("#remove").addEventListener("click", () => {
         // 移除 tree
-        wrapper.removeChild(document.querySelector(".easy-tree"));
         easyTreeHHH.destroy();
         easyTreeHHH = null;
         // 普通的 dom 引用以及点击事件都会被回收，但是对于 window.addEventList("resize") 这种挂载在全局对象上，是会一直监听的。因为 tree = null了，但是如果内部存在定时器等则会有问题，所以调用 destroy

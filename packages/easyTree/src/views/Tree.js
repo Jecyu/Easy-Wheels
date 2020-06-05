@@ -14,7 +14,7 @@
  * 外部 controller 触发事件
  * @Author: Jecyu
  * @Date: 2020-05-26 15:11:24
- * @LastEditTime: 2020-06-05 16:29:56
+ * @LastEditTime: 2020-06-05 17:10:43
  * @LastEditors: Jecyu
  */
 
@@ -195,7 +195,7 @@ export default class EasyTree {
   unbindEvent() {
     this.treeWrapperDom.removeEventListener(
       "click",
-      this.onNodeExpand.bind(this),
+      this.expandCollapseNode.bind(this),
       false
     );
   }
