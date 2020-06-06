@@ -2,7 +2,7 @@
 
 遵循 MVC，这里把 view 里的数据也抽离到 model 里保存，常见的 vue 组件，是把 model（data） 等信息组合到 view 里面的，一个个组件。如 iview。但是没有把 model 严格区分开来。 一个单文件组件里面也有自己的 view 逻辑。这样会搞混。
 
-这里的 V （融合了 View + Controller），数据维护统一在 Model
+这里的 V （融合了 View + Controller），数据维护统一在 Model。
 
 ## 功能
 

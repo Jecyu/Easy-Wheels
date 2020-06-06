@@ -1,0 +1,36 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+.easy-virtual-tree {
+  overflow: auto;
+  position: relative;
+}
+.easy-virtual-tree-phantom {
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+.easy-virtual-tree-content {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+/* .easy-virtual-tree-node {
+} */
+.easy-virtual-tree-node-icon {
+  display: inline-block;
+  padding: 6px;
+  font-size: 12px;
+}
+.easy-virtual-tree-node-icon.is-leaf {
+  color: transparent;
+}

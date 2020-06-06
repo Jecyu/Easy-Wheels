@@ -2,7 +2,7 @@
  * @Description: 
  * @Author: Jecyu
  * @Date: 2020-05-27 15:07:58
- * @LastEditTime: 2020-05-31 00:47:19
+ * @LastEditTime: 2020-06-06 12:10:18
  * @LastEditors: Jecyu
  */ 
 export const createDOMFromString = domString => {
@@ -11,7 +11,7 @@ export const createDOMFromString = domString => {
   return div.childNodes[0];
 };
 
-const dataMaker = function(count, nodeKey = "id", parentKey = "pId") {
+export const dataMaker = function(count, nodeKey = "id", parentKey = "pId") {
   let nodes = [],
     min = 10,
     max = 90,
