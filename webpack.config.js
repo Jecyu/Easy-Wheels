@@ -14,7 +14,7 @@ module.exports = {
   },
   output: {
     // 输出文件
-    path: path.join(__dirname, "./"),
+    path: path.join(__dirname, "./dist"),
     library: "easyWheels", // 指定库的全局变量
     libraryExport: "default", // 入口文件，必须为 export default ...
     libraryTarget: "umd",
@@ -44,6 +44,7 @@ module.exports = {
     host: "127.0.0.1",
     hot: true,
     open: true,
+    // contentBase: path.join(__dirname, 'dist'), //
   },
   resolve: {
     alias: {
