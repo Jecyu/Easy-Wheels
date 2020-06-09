@@ -106,7 +106,7 @@
         return n;
       };
 
-      const treeData = BuildTree(dataMaker(100000), "children", "id", "pId");
+      const treeData = BuildTree(dataMaker(1000), "children", "id", "pId");
       const wrapper = document.querySelector("#wrapper");
       let EasyVirtualTreeHHH = new EasyVirtualTree({
         refContainerNode: wrapper,
