@@ -14,7 +14,7 @@ module.exports = {
   },
   output: {
     // 输出文件
-    path: path.join(__dirname, "./dist"),
+    path: path.join(__dirname, "./"),
     library: "easyWheels", // 指定库的全局变量
     libraryExport: "default", // 入口文件，必须为 export default ...
     libraryTarget: "umd",
