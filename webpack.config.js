@@ -44,7 +44,7 @@ module.exports = {
     host: "127.0.0.1",
     hot: true,
     open: true,
-    // contentBase: path.join(__dirname, 'dist'), //
+    // contentBase: path.join(__dirname, 'public'), //
   },
   resolve: {
     alias: {

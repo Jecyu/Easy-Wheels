@@ -2,7 +2,7 @@
  # @Description: 
  # @Author: Jecyu
  # @Date: 2020-06-05 16:58:23
- # @LastEditTime: 2020-06-09 20:34:49
+ # @LastEditTime: 2020-06-09 20:54:06
  # @LastEditors: Jecyu
 ### 
 
@@ -10,7 +10,7 @@
 set -e
 
 # 生成静态文件
-rm -rf dist 
+rm easy-wheels.min.js easy-wheels.js easy-wheels.js.map
 yarn build
 
 git init
